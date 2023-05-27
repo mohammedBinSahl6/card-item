@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            transition: 0.5s;
+        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: #bbb;
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 20vw;
+        position: relative;
+        margin: 10px;
+        animation: cardi 2s infinite;
+      }
+/* 
+      @keyframes cardi{
+       0%{
+        transform: scale(0) translateX(5000px);
+        
+       }
+       50%{
+        transform: scale(1) translateX(0vw);
+       }
+       100%{
+        transform: scale(0) translateX(-5000px);
+       }
+      } */
+
+      .card:hover{
+        transform: translateX(-10px);
+        box-shadow: 5px 5px 15px ;
+      }
+
+      .card-img {
+        width: 100%;
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-title {
+        padding: 9px;
+      }
+
+      .card-price {
+        color: green;
+        padding: 9px;
+      }
+
+      .card-desc {
+        color: #333;
+      }
+
+      .card-btn, .card-btn-2 {
+        margin: 5px;
+        padding: 3px;
+        background-color: rgb(233, 39, 39);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      } 
+      .card-btn{
+        width: 30%;
+      }
+
+      .card-btn:hover{
+        background-color: transparent;
+        color: rgb(233, 39, 39);
+        border: 1px solid rgb(233, 39, 39) ;
+      }
+
+      .btns-holder {
+        display: flex;
+      }
+
+      .card-btn-2 {
+        width: 70%;
+        background-color: rgb(55, 172, 55);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="card-img"
+        src="https://images.prismic.io/rushordertees-web/e225cda8-d94c-4f4a-8bef-d0ddbdd506a3_Performance+Shirts.jpg?auto=compress,format&rect=0,0,1600,1800&w=800&h=900"
+      />
+      <div class="card-body">
+        <h4 class="card-title">T-Shirt Product</h4>
+        <p class="card-price">$20</p>
+        <article class="card-desc">
+          Eiusmod excepteur ipsum deserunt occaecat incididunt eiusmod minim est
+          consectetur fugiat officia aliqua. Nulla non aliquip dolore ex nostrud
+          ipsum eu aliqua commodo sunt. Quis esse quis quis cillum id voluptate
+          sint cupidatat ipsum ex dolor enim. Do mollit anim non commodo laborum
+          non dolor dolore non dolor.
+        </article>
+        <div class="btns-holder">
+            <button class="card-btn">Buy</button>
+            <button class="card-btn-2">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <img
+          class="card-img"
+          src="https://images.prismic.io/rushordertees-web/e225cda8-d94c-4f4a-8bef-d0ddbdd506a3_Performance+Shirts.jpg?auto=compress,format&rect=0,0,1600,1800&w=800&h=900"
+        />
+        <div class="card-body">
+          <h4 class="card-title">T-Shirt Product</h4>
+          <p class="card-price">$20</p>
+          <article class="card-desc">
+            Eiusmod excepteur ipsum deserunt occaecat incididunt eiusmod minim est
+            consectetur fugiat officia aliqua. Nulla non aliquip dolore ex nostrud
+            ipsum eu aliqua commodo sunt. Quis esse quis quis cillum id voluptate
+            sint cupidatat ipsum ex dolor enim. Do mollit anim non commodo laborum
+            non dolor dolore non dolor.
+          </article>
+          <div class="btns-holder">
+              <button class="card-btn">Buy</button>
+              <button class="card-btn-2">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.prismic.io/rushordertees-web/e225cda8-d94c-4f4a-8bef-d0ddbdd506a3_Performance+Shirts.jpg?auto=compress,format&rect=0,0,1600,1800&w=800&h=900"
+        />
+        <div class="card-body">
+          <h4 class="card-title">T-Shirt Product</h4>
+          <p class="card-price">$20</p>
+          <article class="card-desc">
+            Eiusmod excepteur ipsum deserunt occaecat incididunt eiusmod minim est
+            consectetur fugiat officia aliqua. Nulla non aliquip dolore ex nostrud
+            ipsum eu aliqua commodo sunt. Quis esse quis quis cillum id voluptate
+            sint cupidatat ipsum ex dolor enim. Do mollit anim non commodo laborum
+            non dolor dolore non dolor.
+          </article>
+          <div class="btns-holder">
+              <button class="card-btn">Buy</button>
+              <button class="card-btn-2">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
